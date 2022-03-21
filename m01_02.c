@@ -19,7 +19,7 @@ int main(){
     _Mahasiswa Mahasiswa[100];
     char input[100];
     int jlhmahasiswa;
-    int i = 0, id=0;
+    int i = 0, idd=0;
     char *data;
     do
     {
@@ -43,11 +43,11 @@ int main(){
         } else if (strstr(input, "student-show-best")!=NULL){
             for(int j = 0; j < jlhmahasiswa; j++){
                 if(Mahasiswa[j].gpa < Mahasiswa[j+1].gpa){
-                    id=j+1;
+                    idd=j+1;
                     
                 }
             }
-            printf("%s|%s|%.2f\n", Mahasiswa[id].id, Mahasiswa[id].name, Mahasiswa[id].gpa);
+            printf("%s|%s|%.2f\n", Mahasiswa[idd].id, Mahasiswa[idd].name, Mahasiswa[idd].gpa);
         }
         
     } while (strcmp(input, "---")!=0 && i<100);

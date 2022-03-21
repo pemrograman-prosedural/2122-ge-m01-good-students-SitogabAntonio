@@ -6,7 +6,6 @@
 #include <stdlib.h>
 #include <stdbool.h>
 
-
 typedef struct
 {
     char id[10];
