@@ -23,7 +23,7 @@ int main(){
     do
     {
         scanf("\n");
-        gets(input);
+        scanf(input);
         if (strstr(input, "student-show-all")!=NULL) {
             for (int j = 0; j < jlhmahasiswa; j++)
             {
