@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+#include <stdbool.h>
 
 
 typedef struct
@@ -23,7 +24,7 @@ int main(){
     do
     {
         scanf("\n");
-        gets(input);
+        fgets(input, sizeof(input), stdin);
         if (strstr(input, "student-show-all")!=NULL) {
             for (int j = 0; j < jlhmahasiswa; j++)
             {
