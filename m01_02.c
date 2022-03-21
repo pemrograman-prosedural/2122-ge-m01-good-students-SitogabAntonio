@@ -50,3 +50,4 @@ int main(){
     } while (strcmp(input, "---")!=0 && i<100);
     return 0;
 }
+
