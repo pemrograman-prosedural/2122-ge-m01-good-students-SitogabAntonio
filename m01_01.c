@@ -18,7 +18,7 @@ int main(){
     _Mahasiswa Mahasiswa[100];
     char input[100];
     int jlhmahasiswa;
-    int i = 0, j;
+    int i = 0;
     char *data;
     do
     {
