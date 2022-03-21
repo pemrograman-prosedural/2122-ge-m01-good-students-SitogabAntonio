@@ -5,6 +5,7 @@
 #include <string.h>
 #include <stdlib.h>
 
+
 typedef struct
 {
     char id[10];
