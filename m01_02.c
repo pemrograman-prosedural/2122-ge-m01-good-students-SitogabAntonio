@@ -12,6 +12,7 @@ typedef struct
     float gpa;
 } _Mahasiswa;
 
+
 int main(){
     _Mahasiswa Mahasiswa[100];
     char input[100];
@@ -50,4 +51,3 @@ int main(){
     } while (strcmp(input, "---")!=0 && i<100);
     return 0;
 }
-
