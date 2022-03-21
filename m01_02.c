@@ -4,8 +4,6 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-#include <stdbool.h>
-
 
 typedef struct
 {
@@ -23,21 +21,21 @@ int main(){
     char *data;
     do
     {
-        scanf("\n");
-        fgets(input, sizeof(input), stdin);
-        if (strstr(input, "student-show-all")!=NULL) {
+        scanf("\n"); // untuk membuat sebuah baris baru
+        fgets(input, sizeof(input), stdin); //menyimpan nilai input
+        if (strstr(input, "student-show-all")!=NULL) {  // strstr berfungsi untuk menemukan sebuah string dalam string
             for (int j = 0; j < jlhmahasiswa; j++)
             {
                 printf("%s|%s|%.2f\n", Mahasiswa[j].id, Mahasiswa[j].name, Mahasiswa[j].gpa);
             } 
         } else if (strstr(input, "student-add")!=NULL){
-            data = strtok(input, "#");
+            data = strtok(input, "#"); //strtok untuk memisahkan string dengan tanda #
             data = strtok(NULL, "#");
-            strcpy(Mahasiswa[i].id, data);
+            strcpy(Mahasiswa[i].id, data); //mengcopy suatu string ke string lainnya
             data = strtok(NULL, "#");
             strcpy(Mahasiswa[i].name, data);
             data = strtok(NULL, "#");
-            Mahasiswa[i].gpa = atof(data);
+            Mahasiswa[i].gpa = atof(data);  //atof meengubah string menjadi float
             jlhmahasiswa = i+1;
             i++;
         } else if (strstr(input, "student-show-best")!=NULL){
